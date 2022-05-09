@@ -1,0 +1,5 @@
+all: processes threads
+processes: processes.c
+	gcc -Wall -Werror processes.c -o processes -pthread
+threads: threads.c
+	gcc -Wall -Werror threads.c -o threads -pthread
